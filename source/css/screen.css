@@ -200,9 +200,12 @@ hr {
 blockquote {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 1.6em 0 1.6em -2.2em;
+    margin: 1.6em 0 1.6em 0em;
     padding: 0 0 0 1.6em;
-    border-left: #4a4a4a 0.4em solid;
+    border-left: #7f8c8d 0.2em solid;
+        color: #000;
+    background-color: #bdc3c7;
+    padding: 2%;
 }
 
 blockquote p {
@@ -224,6 +227,11 @@ blockquote cite {
 }
 
 blockquote cite a { font-weight: normal; }
+
+.newsletter {
+  background-color: #ffff47;
+  text-align: center;
+}
 
 mark {
     background-color: #ffc336;
@@ -665,6 +673,7 @@ figure.highlight table > tbody > tr > td {
 figure.highlight table > tbody > tr > td.gutter {
     max-width: 40px;
     text-align: right;
+    display: none;
 }
 figure.highlight pre {
     border: none;
