@@ -1,10 +1,17 @@
 # config
-cover: //i.imgur.com/oygikno.jpg
-logo: //i.imgur.com/WSZt8rr.png
-bio: 'JavaScript Developer ❤'
+cover: /images/cover.jpg
+logo: 
+bio: 'Make things or make things happend'
 
 # Content
-excerpt_link: Read More
+excerpt_link: 更多
 
 # Miscellaneous
-rss:
+rss: 
+
+copyrightdate: 2021
+
+social:
+  weibo: https://weibo.com/u/5400818178
+
+google_analytics: UA-140230223-1
