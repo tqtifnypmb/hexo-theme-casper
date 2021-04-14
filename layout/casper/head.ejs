@@ -29,6 +29,28 @@
     <meta name="keywords" content="<%= config.keywords %>">
   <%} %>
 
+  <% if (typeof permalink != 'undefined') { %>
+    <meta name="twitter:url" content="<%- permalink %>" />
+  <% } else { %>
+    <meta name="twitter:url" content="<%- config.url %>" />
+  <% } %>
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="<%- config.title %>" />
+  <meta name="twitter:creator" content="<%- config.author %>">
+  <meta name="twitter:title" content="<%- page.title %> | <%- config.title %>" />
+  <meta name="twitter:description" content="<%- page.description %>" />
+
+  <% if (typeof permalink != 'undefined') { %>
+    <meta name="og:url" content="<%- permalink %>" />
+  <% } else { %>
+    <meta name="og:url" content="<%- config.url %>" />
+  <% } %>
+  <meta property="og:site_name" content="<%- config.title %>">
+  <meta property="og:title" content="<%- page.title %> | <%- config.title %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="<%- config.language %>" />
+  <meta property="og:description" content="<%- page.description %>" />
+
   <link rel="stylesheet" type="text/css" href="<%- config.root %>css/screen.css" />
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400" />
 
