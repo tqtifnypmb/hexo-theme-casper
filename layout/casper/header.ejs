@@ -2,14 +2,16 @@
     <div class="vertical">
         <div class="site-head-content inner">
             <% if (theme.logo) { %> <a class="blog-logo" href="<%- config.root %>"><img src="<%- theme.logo %>" alt="Blog Logo"/></a> <% } %>
-            <h1 class="blog-title"><%- config.title %></h1>
+            <a class="blog-title-link" href="<%- config.root %>"><h1 class="blog-title"><%- config.title %></h1></a>
             <h2 class="blog-description"><%- config.subtitle %></h2>
             <% if (typeof page.title == 'undefined') { %>
                 <div class="site-head-quick-entry">
                     <% if (config.rss || config.feed) {  %>
-                        <a class="site-head-feed icon-feed" href="<%= config.root + (config.rss || config.feed.path) %>"><span class="tooltip">Subscribe!</span></a>
+                        <a class="site-head-entrance icon-feed" href="<%= config.root + (config.rss || config.feed.path) %>"><span class="tooltip">Subscribe!</span></a>
                     <% } %>
-                    <a class="site-head-about" href="<%- config.root %>about">ABOUT</a>
+                    <% if (theme.weibo) {  %>
+                        <a class="site-head-entrance icon-weibo" href="<%= theme.weibo %>"><span class="tooltip">Weibo</span></a>
+                    <% } %>
                 </div>
             <% } %>
         </div>
