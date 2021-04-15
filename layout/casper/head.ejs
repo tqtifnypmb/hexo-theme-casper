@@ -39,7 +39,7 @@
   <meta name="twitter:creator" content="<%- config.title %>">
   <meta name="twitter:title" content="<%- page.title %> | <%- config.title %>" />
   <% if (typeof page != 'undefined') { %>
-    <meta property="twitter:description" content="<%- page.excerpt %>" />
+    <meta property="twitter:description" content="<%- page.desc %>" />
   <% } %>
 
   <% if (typeof permalink != 'undefined') { %>
@@ -53,7 +53,7 @@
   <meta property="og:locale" content="<%- config.language %>" />
 
   <% if (typeof page != 'undefined') { %>
-    <meta property="og:description" content="<%- page.excerpt %>" />
+    <meta property="og:description" content="<%- page.desc %>" />
   <% } %>
 
   <link rel="stylesheet" type="text/css" href="<%- config.root %>css/screen.css" />
